@@ -44,8 +44,11 @@ setup(
     url="https://github.com/aio-libs/sockjs/",
     license="Apache 2",
     packages=find_packages(),
-    python_requires=">=3.11",
-    install_requires=[ "aiohttp>=3.7.4", ],
+    python_requires=">=3.11.0",
+    install_requires=[
+        "aiohttp>=3.7.4",
+        "async-timeout>=4.0.3",
+    ],
     extras_require={
         "test": [
             "pytest",
